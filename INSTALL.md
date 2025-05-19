@@ -43,7 +43,6 @@ cd rgbds
 make
 
 cd ../
-make
 ```
 
 To build **pokeorange.gbc**:
