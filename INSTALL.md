@@ -30,16 +30,19 @@ make
 # Linux
 
 ```bash
-sudo apt-get install make gcc python git bison
-
-git clone https://github.com/rednex/rgbds.git
-cd rgbds
-git checkout v0.2.5
-sudo make install
-cd ..
+sudo apt-get install make gcc python3 python-is-python3 git bison
 
 git clone https://github.com/PiaCarrot/pokeorange.git
 cd pokeorange
+
+wget https://github.com/gbdev/rgbds/archive/refs/tags/v0.5.2.tar.gz
+tar -xvzf v0.5.2.tar.gz
+rm v0.5.2.tar.gz
+mv rgbds-0.5.2/ rgbds
+cd rgbds
+make
+
+cd ../
 ```
 
 To build **pokeorange.gbc**:
